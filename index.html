@@ -12,7 +12,10 @@
     <header>
         <nav>
             <div class="logo">Your Logo</div>
-            <ul class="nav-links">
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#services">Services</a></li>
                 <li><a href="#how-it-works">How It Works</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
@@ -22,6 +25,7 @@
             </ul>
         </nav>
     </header>
+    
 
     <section id="hero">
         <h1>Helping Startups Scale and Improve Efficiency</h1>
@@ -148,6 +152,17 @@
     <footer>
         <p>&copy; 2024 Business Development Services. All rights reserved.</p>
     </footer>
+
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        var navLinks = document.getElementById('nav-links');
+        if (navLinks.classList.contains('show')) {
+            navLinks.classList.remove('show');
+        } else {
+            navLinks.classList.add('show');
+        }
+    });
+</script>
 
     <!-- Add payment gateway scripts here -->
 </body>
