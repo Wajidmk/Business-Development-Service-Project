@@ -12,19 +12,17 @@
     <header>
         <nav>
             <div class="logo">Your Logo</div>
-            <div class="menu-toggle" id="menu-toggle">
-                ☰
-            </div>
-            <ul class="nav-links" id="nav-links">
+            <div class="menu-toggle">&#9776;</div>
+            <ul class="nav-links">
                 <li><a href="#services">Services</a></li>
                 <li><a href="#how-it-works">How It Works</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#subscription">Start the Journey</a></li>
                 <li><a href="#callback">Request a Callback</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+    
     
 
     <section id="hero">
@@ -154,14 +152,10 @@
     </footer>
 
 <script>
-    document.getElementById('menu-toggle').addEventListener('click', function() {
-        var navLinks = document.getElementById('nav-links');
-        if (navLinks.classList.contains('show')) {
-            navLinks.classList.remove('show');
-        } else {
-            navLinks.classList.add('show');
-        }
-    });
+   document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('show');
+});
+
 </script>
 
     <!-- Add payment gateway scripts here -->

@@ -12,7 +12,6 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
-    position: relative;
 }
 
 nav {
@@ -22,7 +21,6 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    position: relative;
 }
 
 .logo {
@@ -30,6 +28,7 @@ nav {
     font-weight: bold;
 }
 
+/* Desktop Menu */
 .nav-links {
     list-style: none;
     padding: 0;
@@ -61,16 +60,19 @@ nav {
     cursor: pointer;
 }
 
-/* Media Queries */
+/* Media Queries for Mobile */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
         flex-direction: column;
         position: absolute;
         top: 60px; /* Adjust based on header height */
-        left: 0;
         right: 0;
+        left: auto;
         background-color: #333;
+        width: 200px; /* Adjust width as needed */
+        text-align: right; /* Align menu items to the right */
+        padding-right: 20px;
     }
 
     .nav-links.show {
@@ -86,7 +88,6 @@ nav {
         display: block;
     }
 }
-
 
 /* Hero Section */
 #hero {
