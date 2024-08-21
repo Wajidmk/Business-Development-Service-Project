@@ -85,6 +85,23 @@ nav {
     background-color: #e14e2b;
 }
 
+/* About Us Section */
+#about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
 /* Services Section */
 #services {
     padding: 60px 20px;
@@ -112,6 +129,24 @@ nav {
 .service-item p {
     font-size: 16px;
 }
+
+/* How It Works Section */
+#how-it-works {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Match the background color with the About Us section */
+}
+
+#how-it-works h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#how-it-works p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
 
 /* Subscription Plans Section */
 #subscription {
@@ -151,58 +186,169 @@ nav {
     margin-bottom: 10px;
 }
 
-.subscribe-button {
-    background-color: #ff5733;
+#subscription .subscribe-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#subscription .subscribe-button:hover {
+    background-color: #128C7E;
+}
+
+/* Request a Callback Section */
+#callback {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#callback h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#callback p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#callback form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#callback label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#callback input,
+#callback textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#callback button {
+    background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.subscribe-button:hover {
-    background-color: #e14e2b;
+#callback button:hover {
+    background-color: #0056b3;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .subscription-plans {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service-item {
-        margin-bottom: 30px;
-    }
-
-    #hero h1 {
-        font-size: 28px;
-    }
-
-    #hero p {
-        font-size: 16px;
-    }
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
     text-align: center;
-    padding: 20px 0;
 }
 
-/* Additional Section for "Learn More" */
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contact button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#contact button:hover {
+    background-color: #0056b3;
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-item {
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+blockquote {
+    font-size: 16px;
+    margin: 15px 0;
+    padding: 10px;
+    border-left: 3px solid #007bff;
+    color: #555;
+    font-style: italic;
+}
+
+.customer-name {
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Learn More Section */
 #learn-more {
     padding: 60px 20px;
     background-color: #f9f9f9;
@@ -232,4 +378,41 @@ footer {
 
 .learn-more-button:hover {
     background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .subscription-plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        margin-bottom: 30px;
+    }
+
+    #hero h1 {
+        font-size: 28px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
 }
